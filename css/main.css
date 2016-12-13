@@ -1,0 +1,346 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "trebuchet ms", cursive, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
+header .header {
+    /*height: 120px;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.main .main-header {
+    width: 35%;
+    height: 30px;
+    margin: 5% 0 0 35%;
+}
+
+.header-title {
+    height: 60px;
+    width: 100%;
+    background: #0E0E7C;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: none;
+}
+
+.main {
+       width: 100%;
+}
+
+.main .main-content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.main .main-content h1 {
+    margin: 0;
+}
+
+.main .main-content p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: #0E0E7C;
+    /*z-index: 5;*/
+}
+
+footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+
+
+.footer-btn {
+    width: 25%;
+    height: 70px;
+    color: #fff;
+    -webkit-background-size: contain;
+    background-size: contain;
+    text-align: center;
+    /*margin: 5% 0 0 20%;*/
+}
+
+/*FOOTER-BTN*/
+.footer .home {
+    background: url("../img/home(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.footer .home:hover {
+    background: url("../img/home(2).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.footer .home:active {
+    background: url("../img/home(3).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.footer .map {
+    background: url("../img/blue_map(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.footer .map:hover {
+    background: url("../img/blue_map(2).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;;
+}
+.footer .map:active {
+    background: url("../img/blue_map(3).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;;
+}
+
+.footer .about {
+    background: url("../img/about(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.footer .about:hover {
+    background: url("../img/about(2).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.footer .about:active {
+    background: url("../img/about(3).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.footer .contact {
+    background: url("../img/contact(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.footer .contact:hover {
+    background: url("../img/contact(2).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.footer .contact:active {
+    background: url("../img/contact(3).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+
+
+/*HOME*/
+header .header-home {
+    height: 120px;
+    background: url("../img/flag(2).png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+/*MAP*/
+#map {
+    width: 100%;
+    height: 600px;
+    margin-top: 0;
+    }
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    /*background-color: #fff;*/
+    /*opacity: 0.7;*/
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.top-menu-logo {
+    width: 70%;
+    height: 40px;
+    color: #000000;
+    -webkit-background-size: contain;
+    background-size: contain;
+    text-align: center;
+}
+
+.top-menu .map {
+    background: url("../img/map(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.top-menu .loupe {
+    background: url("../img/loupe(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.top-menu .book {
+    background: url("../img/book(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.top-menu .help {
+    background: url("../img/help(1).png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+/*FORMA*/
+.main-form-map-legend {
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px  solid #66AFE9;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 41%;
+    margin-top: -150px;
+    margin-left: -150px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+
+
+.main-form-map-layers {
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px  solid #66AFE9;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 41%;
+    margin-top: -150px;
+    margin-left: -150px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+
+.logo-form {
+    position: absolute;
+    right: 80px;
+}
+.gas-icon {
+
+}
+
+.check-form {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+}
+.check-form a {
+    text-decoration: none;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.check-form a:active {
+    color: #000000;
+}
+
+
+/*-------------------------------*/
+.main-form-loupe {
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px  solid #66AFE9;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 41%;
+    margin-top: -150px;
+    margin-left: -150px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+.main-form-loupe input[type="text"] {
+    height: 40px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.main-form-loupe input[type="text"]:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px
+    rgba(0,0,0,.075),0 0 8px
+    rgba(102,175,233,.6);
+}
+
+.search {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+
+
+/*CONTACT*/
+.content-text {
+    margin: 15px;
+}
+
+.content-text small {
+    color: #7f8489;
+}
+
+.content-text a {
+    text-decoration: none;
+    color: #890000;
+}
+/*-----------------------------------------------*/

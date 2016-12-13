@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAP</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header">
+            <div class="header-title"><p>Veteran Care Network</p></div>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="top-menu">
+            <a  href="#" class="map top-menu-logo"></a>
+            <a  href="#" class="loupe top-menu-logo"></a>
+            <a  href="#" class="book top-menu-logo"></a>
+            <a  href="#" class="help top-menu-logo"></a>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="main-form-map-layers">
+            <div class="check-form">
+                <a class="layers" href="#" style="color: #000000;">Layers</a>
+                <a class="legend" href="#" >Legend</a>
+            </div>
+            <div class="container-form">
+                <p><input  class="checkbox1" id="hospital" type="checkbox"  checked onclick="toggleGroup('hospital')"><label for="hospital">Hospital</label></p>
+                <p><input  class="checkbox2" id="gas" type="checkbox"  checked onclick="toggleGroup('gas')"><label for="gas">Gas station</label></p>
+                <p><input  class="checkbox3" id="morgue" type="checkbox"  checked onclick="toggleGroup('morgue')"><label for="morgue">Morgue</label></p>
+                <p><input  class="checkbox4" id="hotel" type="checkbox"  checked onclick="toggleGroup('hotel')"><label for="hotel">Hotel</label></p>
+            </div>
+
+        </div>
+
+        <div class="main-form-map-legend">
+            <div class="check-form">
+                <a class="layers" href="#" >Layers</a>
+                <a class="legend" href="#" style="color: #000000;">Legend</a>
+            </div>
+            <div class="container-form">
+                <p>Hospital <img class="logo-form" src="img/logo/hospital.png"> </p>
+                <p>Gas station <img class="logo-form" src="img/logo/gas.ico"> </p>
+                <p>Morgue <img class="logo-form" src="img/logo/morgue.ico"></p>
+                <p>Hotel <img class="logo-form" src="img/logo/hotel.ico"></p>
+            </div>
+
+        </div>
+
+        <div class="main-form-loupe">
+            <label><input type="text" autofocus></label>
+            <a href="#"><img class="search" src="img/search.png"></a>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <a href="index.html" class="home footer-btn"></a>
+            <a href="map.html" class="map footer-btn" style="background: url('img/blue_map(3).png') no-repeat center;
+            -webkit-background-size: contain;
+            background-size: contain;"></a>
+            <a href="about.html" class="about footer-btn"></a>
+            <a href="contact.html" class="contact footer-btn"></a>
+        </div>
+
+    </footer>
+</div>
+
+<!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">-->
+<!--</script>-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdwIiOec9KHjnR-DIHpaTcwTvJTtTSGlM&callback=initMap">
+
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

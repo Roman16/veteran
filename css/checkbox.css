@@ -1,0 +1,238 @@
+/*CHECKBOX1*/
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox1 {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox1  {
+    cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox1:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox1:not(checked){
+    position: absolute; /* будем позиционировать псевдочекбокс относительно label */
+    margin-left: 100px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox1:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox1:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 62px;
+    left: 250px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox1:checked + label:before {
+    background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox1:checked + label:after {
+    left: 277px;
+}
+/* Показываем получение фокуса. */
+.checkbox1:focus + label:before {
+    box-shadow: 0 0 0 3px #66AFE9;
+}
+/*-------------------------------------------------*/
+/*CHECKBOX2*/
+.checkbox2 {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox2  {
+    cursor: pointer;
+}
+
+.checkbox2:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox2:not(checked){
+    position: absolute;
+    margin-left: 100px;
+}
+.checkbox2:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 98px;
+    left: 250px;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.checkbox2:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}
+
+.checkbox2:checked + label:before {
+    background: #9FD468;
+}
+.checkbox2:checked + label:after {
+    left: 277px;
+}
+
+.checkbox2:focus + label:before {
+    box-shadow: 0 0 0 3px #66AFE9;
+}
+/*---------------------------------------------------*/
+/*CHECKBOX3*/
+.checkbox3 {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox3  {
+    cursor: pointer;
+}
+
+.checkbox3:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox3:not(checked){
+    position: absolute;
+    margin-left: 100px;
+}
+.checkbox3:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 138px;
+    left: 250px;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.checkbox3:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: 250px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}
+
+.checkbox3:checked + label:before {
+    background: #9FD468;
+}
+.checkbox3:checked + label:after {
+    left: 277px;
+}
+
+.checkbox3:focus + label:before {
+    box-shadow: 0 0 0 3px #66AFE9;
+}
+/*---------------------------------------------------*/
+/*CHECKBOX4*/
+.checkbox4 {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox4  {
+    cursor: pointer;
+}
+
+.checkbox4:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox4:not(checked){
+    position: absolute;
+    margin-left: 100px;
+}
+.checkbox4:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 177px;
+    left: 250px;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.checkbox4:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 179px;
+    left: 250px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}
+
+.checkbox4:checked + label:before {
+    background: #9FD468;
+}
+.checkbox4:checked + label:after {
+    left: 277px;
+}
+
+.checkbox4:focus + label:before {
+    box-shadow: 0 0 0 3px #66AFE9;
+}
+/*-------------------*/
+.container-form {
+    width: 80%;
+    margin: 0 auto;
+}
